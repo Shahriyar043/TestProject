@@ -29,7 +29,7 @@ public partial class _Default : Page
         using (SqlConnection connection = new SqlConnection(strCon))
         {
             connection.Open();
-            SqlCommand cmd = new SqlCommand(@"SELECT [Id]
+            SqlCommand cmd = new SqlCommand(@"SELECT [Id]   
                                               ,[UserId]
                                               ,[FirstName]
                                               ,[LastName]

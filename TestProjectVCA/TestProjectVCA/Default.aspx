@@ -15,7 +15,7 @@
         <br />
         <asp:Button ID="btnadd" runat="server" Text="Add" OnClick="btnAdd_Click" />
         <asp:Button ID="btnupdate" runat="server" Text="Update" OnClick="btnUpdate_Click" />
-        <asp:Button ID="btndelete" runat="server" Text="Delete" OnClick="btndDelete_Click" />
+        <asp:Button ID="btndelete" runat="server" Text="Delete" OnClick="btnDelete_Click" />
         <br />
         <br />
         <asp:GridView ID="gridContacs" runat="server" AutoGenerateColumns="false">
@@ -24,7 +24,7 @@
                 <asp:BoundField DataField="lastname" HeaderText="Last name" />
                 <asp:TemplateField>
                     <ItemTemplate>
-                        <asp:LinkButton ID="lnkselect" runat="server" CommandArgument='<%# Eval("Id") %>' OnClick="lnkselect_Click">Select</asp:LinkButton>
+                        <asp:LinkButton ID="lnkSelect" runat="server" CommandArgument='<%# Eval("Id") %>' OnClick="lnkSelect_Click">Select</asp:LinkButton>
                     </ItemTemplate>
                 </asp:TemplateField>
             </Columns>
